@@ -8,10 +8,14 @@
     <title>Строй-Дельта</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./assets/css/dist/main.css">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,italic,500,600,700,800" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
@@ -51,27 +55,31 @@
             <div class="container">
                 <div class="header__info--content">
                     <div class="header__info--logo header__logo">OPTPLAST</div>
-                    <div class="header__info--title"><span>ДОМАШНИЙ МАСТЕР</span> – вызов мастера на дом, ремонтные,
-                        строительные,
-                        сантехнические и другие виды работ по адекватным ценам!</div>
+                    <div class="header__info--title"><span>Пенопласт напрямую от завода изготовителя </span> – Оптом и в розницу от 1380 руб/м3 всегда наличии!
+                        <p>Производим по ГОСТу, режем по нужным размерам, доставим по Москве и области в течении суток!</p>
+                    </div>
                     <div class="header__contact-form contact-form">
-                        <div class="contact-form__subtitle">Звоните прямо сейчас!</div>
-                        <div class="contact-form__phone"><a href="tel:89037766316">+7 (903) 776-63-16</a></div>
-                        <div class="contact-form__button">Оставить заявку</div>
+                        <div class="adaptive">
+                            <div class="contact-form__subtitle">Звоните прямо сейчас!</div>
+                            <div class="contact-form__phone"><a href="tel:89037766316">+7 (903) 776-63-16</a></div>
+                        </div>
+                        <div class="contact-form__button main-btn primary">Оставить заявку</div>
+                    </div>
+                    <div class="burger__wrapper">
+                        <div class="burger">
+                            <div class="burgerBar"></div>
+                            <div class="burgerBar"></div>
+                            <div class="burgerBar"></div>
+                        </div>
                     </div>
                 </div>
                 <nav class="header__navbar navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Главная</a></li>
-                        <div class="navbar__divider"></div>
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Пенопласт</a></li>
-                        <div class="navbar__divider"></div>
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Прайс</a></li>
-                        <div class="navbar__divider"></div>
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Калькулятор</a></li>
-                        <div class="navbar__divider"></div>
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Сертификаты</a></li>
-                        <div class="navbar__divider"></div>
                         <li class="navbar__item"><a class="navbar__link" href="javascript://">Контакты</a></li>
                     </ul>
                 </nav>
@@ -79,7 +87,229 @@
         </div>
     </header>
 
-    <script src="./assets/js/main.js"></script>
+    <section style="height: 80vh; background-color: #494f76;margin-top: 0;"></section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="section__title">Актуальные цены на осенний период</div>
+            <div class="catalog__body"></div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__wrapper">
+                <div class="advantages__block advantages-1 advantages--dark">
+                    <div class="advantages__title">Доставка в&nbsp;минимальные сроки</div>
+                    <div class="advantages__img">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                </div>
+                <div class="advantages__block advantages-2">
+                    <div class="advantages__title">Держим цены для&nbsp;вас</div>
+                    <div class="advantages__img">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                </div>
+                <div class="advantages__block advantages-3">
+                    <div class="advantages__title">Гарантия качества от&nbsp;производителя</div>
+                    <div class="advantages__img">
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates">
+        <div class="container">
+            <!-- TTU -->
+            <div class="section__title">
+                МЫ ИМЕЕМ ВСЕ НЕОБХОДИМЫЕ
+                <div style="color: #4f61cc;">СЕРТИФИКАТЫ ДЛЯ ПРОИЗВОДСТВА</div>
+            </div>
+            <div class="certificates__wrapper">
+                <div class="certificates__img">
+                    <img src="https://styro.ru/images/sert-1.jpeg" alt="">
+                </div>
+                <div class="certificates__img">
+                    <img src="https://styro.ru/images/sert-2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator">
+        <div class="container">
+            <div class="section__title">
+                РАСЧЕТ СТОИМОСТИ ПЕНОПЛАСТА
+            </div>
+            <form class="calculator__wrapper">
+                <div class="calculator__fields fields">
+                    <div class="fields__block fields--mark">
+                        <div class="fields__title">ВЫБЕРИТЕ МАРКУ<br />(ЦЕНА ЗА М3)</div>
+                        <select name="" id="">
+                            <option value="1">ПСБ-С 15 (плотность  до 10,1( кг/ м³)</option>
+                            <option value="2">ПСБ-С 15 (плотность 10,1 ÷ 11,0 (кг/ м³)³</option>
+                            <option value="3">ПСБ-С 15 (плотность 13,1 ÷ 13,5 (кг/ м³)</option>
+                            <option value="4">ПСБ-С 25 (плотность 15,1 ÷ 15,5 (кг/ м³)</option>
+                        </select>
+                    </div>
+                    <div class="fields__block fields--square">
+                        <div class="fields__title">ВВЕДИТЕ ПЛОЩАДЬ, М2</div>
+                        <input type="text" value="0">
+                    </div>
+                    <div class="fields__block fields--depth">
+                        <div class="fields__title">ВЫБЕРИТЕ ТОЛЩИНУ</div>
+                        <select name="" id="">
+                            <option value="1">1 см</option>
+                            <option value="2">2 см</option>
+                            <option value="3">3 см</option>
+                            <option value="4">4 см</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calculator__result result">
+                    <div class="result__datas">
+                        <div class="result__volume">
+                            Объем: <span id="volume">0</span> <span>м3</span>
+                        </div>
+                        <div class="result__cost">
+                            Стоимость: <span id="volume">0</span> <span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="result__submit">
+                        <input type="text" placeholder="Ваш телефон">
+                        <button class="main-btn secondary">Оформить заказ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+          <div class="img"></div>
+          <div class="faq__wrapper">
+            <div>
+                <div class="faq__subtitle">Часто задаваемые вопросы</div>
+            <div class="faq__title">F.A.Q.</div>
+            </div>
+            <p>У наших заказчиков часто возникают вопросы о различных нюансах нашей работы. Ниже мы постарались ответить на самые часто задаваемые вопросы.</p>
+            <div class="ac-container">
+                <div>
+                    <input id="ac-1" name="accordion-1" type="radio" checked />
+                    <label for="ac-1">Даете ли вы какую-нибудь гарантию на Вашу работу?</label>
+                    <article>
+                        <p>Безусловно, мы даем гарантию на всю нашу работу, а также на оборудование и механизмы. При возникновении каких-либо проблем Вы связываетесь с нами и мы в кратчайшие сроки устраняем неполадки или передаем оборудование в наш сервисный центр для более глубокой диагностики и выявления проблем. </p>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-2" name="accordion-1" type="radio" />
+                    <label for="ac-2">Сколько времени требуется на строительство дома?</label>
+                    <article>
+                        <p>Сторонники тоталитаризма в науке заблокированы в рамках своих собственных рациональных ограничений. В целом, конечно, сплоченность команды профессионалов является качественно новой ступенью модели развития.</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-3" name="accordion-1" type="radio" />
+                    <label for="ac-3">Вы верите в теорию эволюции Дарвина?</label>
+                    <article>
+                        <p>Прежде всего, высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке поставленных обществом задач. Явные признаки победы институциализации освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, своевременно верифицированы. Мы вынуждены отталкиваться от того, что реализация плановых заданий способствует повышению качества новых предложений.</p>
+                    </article>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+          <div class="section__title">Наши партнеры</div>
+          <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner5.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner6.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://master.ananasov.com/wp-content/uploads/2019/12/partner7.png" alt=""></div>
+                </div>
+            </div>
+          </div>
+      </section>
+
+    <section style="height: 80vh;"></section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/dist/main.dev.js"></script>
+    <script>
+
+        const items = [
+            {
+                name: ' ПСБ-С 15 (плотность  до 10,1( кг/ м³)',
+                price: '2 630.00'
+            },
+            {
+                name: 'ПСБ-С 15 (плотность 10,1 ÷ 11,0 (кг/ м³)³',
+                price: '3 100.00'
+            },
+            {
+                name: 'ПСБ-С 15 (плотность 13,1 ÷ 13,5 (кг/ м³)',
+                price: '3 600.00'
+            },
+            {
+                name: 'ПСБ-С 25 (плотность 15,1 ÷ 15,5 (кг/ м³)',
+                price: '4 020.00'
+            },
+            {
+                name: 'ПСБ -С 25Ф (плотность 16,1-16,5 кг/м3)',
+                price: '4 240.00'
+            },
+            {
+                name: 'ПСБ-С 25 (плотность 18,1 ÷ 18,5 (кг/ м³)',
+                price: '4 620.00'
+            },
+            {
+                name: 'ПСБ-С 25 Ф (плотность 18,1 ÷ 18,5( кг/ м³)',
+                price: '4 690.00'
+            },
+            {
+                name: 'ПСБ-С 25 (плотность 21,1 ÷ 21,5 (кг/ м³)',
+                price: '5 280.00'
+            },
+            {
+                name: 'ПСБ-С 35 (плотность 25,1 ÷ 25,5 (кг/ м³)',
+                price: '6 500.00'
+            },
+            {
+                name: 'ПСБ-С 35 (плотность 30,1 ÷ 30,5 (кг/ м³)',
+                price: '7 650.00'
+            },
+        ]
+        let catalog = document.querySelector('.catalog__body');
+        let out = ``;
+        for (let item in items) {
+            out += `
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <img src="https://спбпенопласт.рф/upload/resize_cache/iblock/703/240_240_140cd750bba9870f18aada2478b24840a/Tolshchina-20-mm.jpg" alt="пенопласт">
+                        <div class="card__content">
+                            <div class="card__title">${items[item].name}</div>
+                            <div class="card__price">${items[item].price} ₽/м³</div>
+                        </div>
+                    </div>
+                    <div class="card__onHover">
+                        <div class="main-btn primary">Отправить заявку</div>
+                        <a href="javascript://">Узнать больше</a>
+                    </div>
+                </div>
+            `
+        }
+        catalog.innerHTML = out;
+    </script>
 </body>
 
 </html>
